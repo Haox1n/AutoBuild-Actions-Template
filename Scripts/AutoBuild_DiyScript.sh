@@ -4,11 +4,11 @@
 
 Firmware_Diy_Core() {
 
-	Author=AUTO
-	Author_URL=AUTO
+	Author=Haox1n
+	Author_URL=Haox1n.fun
 	Default_Flag=AUTO
-	Default_IP="192.168.1.1"
-	Default_Title="Powered by AutoBuild-Actions"
+	Default_IP="192.168.100.1"
+	Default_Title="Powered by G.H AutoBuild-Actions"
 
 	Short_Fw_Date=true
 	x86_Full_Images=false
