@@ -10,12 +10,7 @@
 | :----: | :----: | :----: | :----: |
 | [x86_64](./.github/workflows/AutoBuild-x86_64.yml) | [x86_64](./Configs/x86_64) | ✅ | ❎ |
 | [新路由3](./.github/workflows/AutoBuild-d-team_newifi-d2.yml) | [d-team_newifi-d2](./Configs/d-team_newifi-d2) | ✅ | ✅ |
-| [华硕 acrh17](./.github/workflows/AutoBuild-asus_rt-acrh17.yml) | [asus_rt-acrh17](./Configs/asus_rt-acrh17) | ❎ | ❎ |
-| [竞斗云 2.0](./.github/workflows/AutoBuild-p2w_r619ac-128m.yml) | [p2w_r619ac-128m](./Configs/p2w_r619ac-128m) | ❎ | ❎ |
-| [红米 AC2100](./.github/workflows/AutoBuild-xiaomi_redmi-router-ac2100.yml) | [xiaomi_redmi-router-ac2100](./Configs/xiaomi_redmi-router-ac2100) | ❎ | ❎ |
-| [小娱C1/3/5](./.github/workflows/AutoBuild-xiaoyu_xy-c5.yml) | [xiaoyu_xy-c5](./Configs/xiaoyu_xy-c5) | ❎ | ✅ |
-| [红米 AX6S](./.github/workflows/AutoBuild-xiaomi_redmi-router-ax6s.yml) | [xiaomi_redmi-router-ax6s](./Configs/xiaomi_redmi-router-ax6s) | ✅ | ❎ |
-
+|
 ## 一、定制固件(可选)
 
    🎈 **提示**: 文中的 **TARGET_PROFILE** 为要编译的设备名称, 例如: `d-team_newifi-d2`、`asus_rt-acrh17`
