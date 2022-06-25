@@ -128,6 +128,7 @@ jobs:
             sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php
             sudo -E apt-get -y autoremove --purge
             sudo -E apt-get clean
+
         fi
 
     - name: Clone Openwrt Source Code
@@ -135,18 +136,17 @@ jobs:
         git clone -b $REPO_BRANCH $REPO_URL openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
-
-#guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
-    - name: 固件自定义插件主题
-      run: |
+        #-name: 固件自定义插件主题
         cd package
         mkdir openwrt-packages
         cd openwrt-packages
         git clone https://github.com/linkease/istore.git
+        #guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
+
         ./scripts/feeds update -a
         ./scripts/feeds install -a
+
+
     - name: Run AutoBuild_DiyScript.sh
       run: |
         chmod +x Scripts/AutoBuild_*.sh
