@@ -66,6 +66,14 @@ jobs:
         swap-size-mb: 512
         remove-dotnet: 'true'
         remove-android: 'true'
+        
+#guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
+    - name: 固件自定义插件主题
+      run: |
+        cd package
+        mkdir openwrt-packages
+        cd openwrt-packages
+        git clone https://github.com/linkease/istore
 
     - name: Checkout
       uses: actions/checkout@main
