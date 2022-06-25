@@ -67,13 +67,6 @@ jobs:
         remove-dotnet: 'true'
         remove-android: 'true'
         
-#guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
-    - name: 固件自定义插件主题
-      run: |
-        cd package
-        mkdir openwrt-packages
-        cd openwrt-packages
-        git clone https://github.com/linkease/istore.git
 
     - name: Checkout
       uses: actions/checkout@main
@@ -145,6 +138,15 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
 
+#guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
+    - name: 固件自定义插件主题
+      run: |
+        cd package
+        mkdir openwrt-packages
+        cd openwrt-packages
+        git clone https://github.com/linkease/istore.git
+        ./scripts/feeds update -a
+        ./scripts/feeds install -a
     - name: Run AutoBuild_DiyScript.sh
       run: |
         chmod +x Scripts/AutoBuild_*.sh
