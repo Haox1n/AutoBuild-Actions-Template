@@ -136,12 +136,19 @@ jobs:
         git clone -b $REPO_BRANCH $REPO_URL openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
-        #-name: 固件自定义插件主题
+       
+       
+       
+        ####开始-name: 固件自定义插件主题
         cd package
         mkdir openwrt-packages
         cd openwrt-packages
-        git clone https://github.com/linkease/istore.git
-        #guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
+        ##添加/xiangfeidexiaohuo/openwrt-packages的插件库
+        sed -i "1isrc-git add https://github.com/xiangfeidexiaohuo/op-add" feeds.conf.default
+        sed -i "2isrc-git xiangfeidexiaohuo https://github.com/xiangfeidexiaohuo/openwrt-packages" feeds.conf.default
+        sed -i "3isrc-git passwall https://github.com/xiaorouji/openwrt-passwall" feeds.conf.default
+        sed -i "4isrc-git helloworld https://github.com/fw876/helloworld\n" feeds.conf.default
+        ###结束#guided_by_VideoTalk_https://www.vediotalk.com/archives/6827
 
         ./scripts/feeds update -a
         ./scripts/feeds install -a
