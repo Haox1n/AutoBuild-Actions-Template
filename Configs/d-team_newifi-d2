@@ -97,6 +97,6 @@ CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
 CONFIG_PACKAGE_xl2tpd=y
 
-#手动添加的软件，在 AutoBuild-Actions-Template/.github/workflows/AutoBuild-d-team_newifi-d2.yml 第70行 中已经添加了git clone的地址
+#手动添加的软件，在 AutoBuild-Actions-Template/.github/workflows/AutoBuild-d-team_newifi-d2.yml 第142行 中已经添加了git clone的地址
 CONFIG_PACKAGE_luci-app-store=y
 
